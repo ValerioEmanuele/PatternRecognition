@@ -1,0 +1,10 @@
+blog\valerioemanuele\pattern\util\Constants.class
+blog\valerioemanuele\pattern\api\controller\GeometryController.class
+blog\valerioemanuele\pattern\model\Point$PointBuilder.class
+blog\valerioemanuele\pattern\model\LineSegment.class
+blog\valerioemanuele\pattern\model\Point.class
+blog\valerioemanuele\pattern\service\LineSegmentService.class
+blog\valerioemanuele\pattern\util\Validator.class
+blog\valerioemanuele\pattern\model\LineSegment$LineSegmentBuilder.class
+blog\valerioemanuele\pattern\service\PointService.class
+blog\valerioemanuele\pattern\repository\PointRepository.class
