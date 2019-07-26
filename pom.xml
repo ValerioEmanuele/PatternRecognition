@@ -9,6 +9,29 @@
 	<description>Given a set of P feature points in the bidimensional plane, determine every line that contains at least N or
 more COLLINEAR points</description>
 
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.1</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+			</plugin>
+		</plugins>
+	</build>
+
 
 	<properties>
 		<java.version>11</java.version>
@@ -20,6 +43,7 @@ more COLLINEAR points</description>
 		<jackson.version>2.9.9.1</jackson.version>
 		<hibernate.version>5.4.3.Final</hibernate.version>
 		<spring.data.version>2.1.9.RELEASE</spring.data.version>
+		<swagger2.version>2.9.2</swagger2.version>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 	</properties>
@@ -87,6 +111,17 @@ more COLLINEAR points</description>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>${hibernate.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>${swagger2.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>${swagger2.version}</version>
 		</dependency>
 
 		<dependency>

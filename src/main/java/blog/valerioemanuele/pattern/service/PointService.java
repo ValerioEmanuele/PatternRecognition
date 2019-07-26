@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import blog.valerioemanuele.pattern.model.Point;
+import blog.valerioemanuele.pattern.model.PointId;
 import blog.valerioemanuele.pattern.repository.PointRepository;
 import blog.valerioemanuele.pattern.util.Validator;
 
@@ -22,6 +23,9 @@ public class PointService {
 
 	public boolean add(Point point) {
 		Validator.validate(point);
+		if(pointRepository.existsById(PointId.builder().x(point.getX()).y(point.getY()).build())) {
+			return false;
+		}
 		return pointRepository.saveAndFlush(point) != null;
 	}
 
