@@ -1,7 +1,6 @@
 package blog.valerioemanuele.pattern.api.controller;
 
 import java.text.MessageFormat;
-import java.util.Optional;
 import java.util.Set;
 import java.util.TreeSet;
 
