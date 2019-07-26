@@ -21,6 +21,7 @@ import blog.valerioemanuele.pattern.util.Validator;
 
 @Service
 public class LineSegmentService {
+	
 	private PointService pointService;
 
 	public LineSegmentService(PointRepository pointRepository) {

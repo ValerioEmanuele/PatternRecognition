@@ -45,8 +45,6 @@ class TestPoint {
 	@DisplayName("Test points distance")
 	void testPointDistance() {
 		Point p1 = Point.builder().x(-23d).y(100d).build();
-		Point p2 = Point.builder().x(15d).y(100d).build();
-		
 		Point p3 = Point.builder().x(1023d).y(-23.5d).build();
 		
 		assertEquals(1053.2655173316934, p1.distanceTo(p3));
