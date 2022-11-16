@@ -16,7 +16,7 @@ more COLLINEAR points</description>
 		<spring.version>5.1.8.RELEASE</spring.version>
 		<mockito.version>3.0.0</mockito.version>
 		<spring.boot.version>2.1.6.RELEASE</spring.boot.version>
-		<jackson.version>2.9.9.3</jackson.version>
+		<jackson.version>2.12.7.1</jackson.version>
 		<hibernate.version>5.4.3.Final</hibernate.version>
 		<spring.data.version>2.1.9.RELEASE</spring.data.version>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
